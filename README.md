@@ -429,9 +429,7 @@ upstream locations and commits.
   package does not). Samples that need SDL2 will link-fail until those target
   libraries are added.
 - Only `hello_world` was validated on hardware. Other samples were not run.
-- The three support modules are redistributed from the official sample release and
-  are Sony/IDC runtime files, not built by this project. Replace them with your own
-  dumps if you prefer.
+- The support modules libc.prx and libSceFios2.prx are stub modules made by the OpenOrbis project, and right.sprx is a file by IDC distributed with the OpenOrbis samples. All three come from the official OpenOrbis v0.5.4 release and were not built by this project. The licensing status of right.sprx was not independently verified, so anyone redistributing it should check with the OpenOrbis project. You can also replace all three with copies from the official release.
 - There are no macOS or Windows host adapter directories; this package targets
   ARM64 Linux only. The Makefile's Darwin branch is left untouched but unused.
 - The legacy `create-eboot` CLI is provided as a wrapper around `create-fself`.
