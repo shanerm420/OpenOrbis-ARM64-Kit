@@ -1,8 +1,9 @@
 # Prebuilt host binaries and large x86-64 target libraries
 # (distributed in the release archive, not in this source repository)
-bin-arm64/
-lib/
-verified/
+/bin-arm64/
+/lib/
+/support/
+/verified/
 
 # Build outputs
 *.pkg
@@ -11,21 +12,19 @@ verified/
 *.o
 eboot.bin
 x64/
-samples/*/sce_sys/param.sfo
-samples/*/sce_sys/keystone
 
 # Release and transfer artifacts
 *.tar.gz
-repo.zip
-OpenOrbis-PS4-Toolchain-ARM64/
+/repo.zip
+/OpenOrbis-PS4-Toolchain-ARM64/
 
 # Large sample media (distributed in the release archive)
-samples/audio-wav/assets/audio/*.wav
-samples/SDL2/video.mp4
+/samples/audio-wav/assets/audio/*.wav
+/samples/SDL2/video.mp4
 
 # Upstream release extras
-extra/
-PkgTool-linux-arm64/
+/extra/
+/PkgTool-linux-arm64/
 
 # Local logs, environment and OS/editor files
 *.log
@@ -35,5 +34,3 @@ PkgTool-linux-arm64/
 Thumbs.db
 *.swp
 *~
-
-support/
