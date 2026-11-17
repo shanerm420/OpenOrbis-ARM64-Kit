@@ -1,0 +1,3 @@
+#!/bin/sh
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+exec "$(dirname "$0")/../../bin-arm64/PkgTool.Core" "$@"

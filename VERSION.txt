@@ -1,0 +1,26 @@
+OpenOrbis-PS4-Toolchain-ARM64
+=============================
+
+Packaged:            2026-11-17
+Host:                Ubuntu 26.04.1 LTS (resolute), aarch64, proot on Termux/Android
+Upstream toolchain:  OpenOrbis-PS4-Toolchain 0a1aaf9 (2026-02-27)
+LLVM / clang / lld:  18.1.8 (Ubuntu clang-18, lld-18, llvm-18)
+Go:                  1.26.8, GOOS=linux GOARCH=arm64, CGO_ENABLED=0
+Go tools:            create-fself (f2da622), create-gp4, readoelf
+PkgTool.Core:        LibOrbisPkg v0.2 (72370ca), .NET 8 self-contained
+                     single-file linux-arm64; reports 0.2.0.0
+.NET SDK (build):    8.0.428
+musl:                OpenOrbis fork, VERSION 1.2.0 (x86-64 PS4 target)
+Target tuple:        x86_64-pc-freebsd12-elf
+SCE .so stubs:       426 shipped (427 generated; libc.so removed on purpose)
+
+Verified artifact (verified/):
+  file:    IV0000-BREW00083_00-HELLOWORLD000000.pkg
+  size:    6,619,136 bytes
+  sha256:  8254c99553510caa2cb018cb6757727f811595a838cc8e2e3d35ebc037ceb471
+  eboot:   1,211,200 bytes, 8 SELF entries
+  pkg_validate: 28/28 [OK]
+
+Hardware validation:
+  PS4 Pro, firmware 12.52, GoldHEN
+  PKG installed and launched; klog: "main: Hello world! Waiting 2 seconds!"
